@@ -1,0 +1,31 @@
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfebff;
+  border-radius: 7px;
+  padding: 5px;
+  background-color: #fff;
+  height: 25px;
+  margin-top: 32px;
+
+  &&:hover{
+   border-color:  #9fc1fb;
+  }
+  img{
+    width: 20px;
+    color: #2b2b2b;
+  }
+}
+
+.search-icon {
+  margin-right: 5px;
+  font-size: 18px;
+  color: #999;
+}
+
+.search_inp {
+  border: none;
+  outline: none;
+  flex: 1;
+  color: black;
+}

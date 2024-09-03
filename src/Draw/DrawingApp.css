@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.drawApp{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: gray;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  width: 100%;
+  /* max-width: 1050px; */
+  height: 100vh;
+ padding: 10px;
+  gap: 10px;
+}
+section{
+  background: #fff;
+  border-radius: 7px;
+}
+.tools-board{
+  width: 210px;
+  padding: 80px 22px 0 22px;
+  .row{
+    /* margin-bottom: 20px; */
+   
+  }
+}
+.row .options{
+  list-style: none;
+  margin: 10px 0 0 5px;
+
+  .option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+   cursor: pointer;
+  }
+}
+.option:is(:hover, .active) img{
+  filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+}
+.option:is(:hover, .active) :where(span,label){
+  color: #4A98F7;
+}
+.option :where(span,label){
+  color: #5A6168;
+  padding-left: 10px;
+}
+.option #fill-color{
+  height: 14px;
+  width: 14px;
+}
+
+#fill-color{
+  color: #4A98F7;
+}
+.option #size-slider{
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+}
+.colors .options{
+  display: flex;
+  justify-content: space-between;
+}
+.colors .option{
+height: 20px;
+width: 20px;
+background: red;
+border-radius: 50%;
+margin-top: 3px;
+position: relative;
+}
+.canvas .option{
+  height: 20px;
+width: 20px;
+background: red;
+border-radius: 3px;
+margin-top: 3px;
+position: relative;
+} 
+.colors .option:nth-child(1){
+   background-color: #fff;
+   border: 1px solid #bfbfbf;
+}
+.colors .option:nth-child(2){
+  background-color: #000;
+}
+.colors .option:nth-child(3){
+  background-color: #E02020;
+}
+.colors .option:nth-child(4){
+  background-color: #6DD400;
+}
+.colors .option:nth-child(5){
+  background-color: #4A98F7;
+}
+.colors .option.selected::before{
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  left: 50%;
+  background: inherit;
+  border-radius: inherit;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+}
+
+.colors .option:first-child.selected::before{
+border-color: #ccc;
+}
+.option .picker{
+  opacity: 0;
+  cursor: pointer;
+}
+.buttons button{
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  margin-bottom: 13px;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+font-size: 0.9rem;
+}
+.buttons .clear-canvas{
+  color:#6C757D;
+  border: 1px solid #6C757D;
+
+}
+.buttons .save-img{
+  color:#4A98F7;
+  border: 1px solid #4A98F7;
+transition: all 0.3s ease;
+}
+.clear-canvas:hover{
+  color: #fff;
+  background: #6C757D;
+}
+
+
+.drawing-board{
+  flex: 1;
+}
+
+.drawing-board canvas{
+  width: 100%;
+  height: 100%;
+}
+
+
+#line{
+  img{
+    width: 20px;
+  }
+}
+
+.undo-redo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  button:hover{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  .undo{
+  img{
+    width: 25px;
+  }
+  &:hover::after {
+    content: "Undo";
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+}
+  .redo{
+    &:hover::after {
+      content: "Redo";
+      position: absolute;
+      
+      background-color: black;
+      color: white;
+      padding: 4px;
+      font-size: 15px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+    img{
+      width: 25px;
+    }
+    
+  }
+}
+
+
+/* light/dark */
+.wrap-check-14 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.wrap-check-14 *,
+.wrap-check-14 ::after,
+.wrap-check-14 ::before {
+  box-sizing: border-box;
+}
+
+/* The switch - the box around the slider */
+.wrap-check-14 .switch {
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+  display: inline-block;
+}
+
+/* The slider */
+.wrap-check-14 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: 
+#dbdbe2;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.wrap-check-14 .slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+  ;
+ transition: .4s;
+}
+
+.wrap-check-14 input:checked + .slider {
+  background-color: 
+#303136;
+}
+
+.wrap-check-14 input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: 
+#303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px 
+#8983f7, inset -10px -4px 0 0 
+#a3dafb;
+}
+
+
+
+
+.lower{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 70px;
+}
+
+.undo-p{
+  display: none;
+}
+
+.redo-p{
+  display: none;
+}
+
+.textBg{
+  .title{
+    color: rgb(227, 222, 222);
+  }
+}

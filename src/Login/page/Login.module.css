@@ -1,0 +1,542 @@
+.signIn,
+.yourLogo {
+  position: relative;
+  display: inline-block;
+}
+.yourLogo {
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  min-width: 100px;
+  cursor: pointer;
+}
+.signIn {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  min-width: 102px;
+}
+.ifYouDont {
+  align-self: stretch;
+  position: relative;
+}
+.youCan {
+  white-space: pre-wrap;
+}
+.registerHere {
+  font-weight: 600;
+  color: green;
+  cursor: pointer;
+}
+.youCanRegisterContainer {
+  align-self: stretch;
+  position: relative;
+}
+.ifYouDontHaveAnAccountRParent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-base);
+}
+.ifYouDontHaveAnAccountRParent,
+.signInTitle,
+.signInTitleContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.signInTitle {
+  width: 308px;
+  flex-direction: column;
+  gap: var(--gap-3xl);
+}
+.signInTitleContainer {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-11xs) 3px;
+}
+.password {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 64px;
+}
+.passwordLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs);
+}
+.padlock1Icon {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+}
+.passwordIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+ 
+}
+.enterYourPassword {
+  position: relative;
+  opacity: 60%;
+  color: black;
+}
+.passwordIconContainerParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.invisible1Icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.passwordContent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.passwordFieldChild {
+  align-self: stretch;
+  height: 2px;
+  color: black;
+  position: relative;
+  background-color: var(--color-midnightblue);
+
+}
+.passwordField {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 8px;
+  gap: var(--gap-4xs);
+  font-size: var(--font-size-base);
+  color: var(--color-midnightblue);
+}
+.rememberMeCheckbox {
+  margin: 0;
+  height: 18px;
+  width: 15px;
+}
+.rememebrMe {
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 90px;
+}
+.rememberMe {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.forgotPassword {
+  position: relative;
+  font-weight: 300;
+  color: #4d4d4d;
+  display: inline-block;
+  min-width: 108px;
+}
+.rememberForgotContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.passwordInput,
+.rememberForgotPassword {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rememberForgotPassword {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-11xs);
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+}
+.passwordInput {
+  flex-direction: column;
+  padding: 0 0 11px;
+  gap: var(--gap-4xs);
+  font-size: var(--font-size-smi);
+  color: var(--color-darkgray);
+}
+.frameChild {
+  height: 53px;
+  width: 429px;
+  position: relative;
+  box-shadow: 0 4px 26px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-13xl);
+  background-color: var(--color-mediumblue);
+  display: none;
+  max-width: 100%;
+}
+.login {
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 46px;
+  z-index: 1;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: 14px var(--padding-xl) 13px var(--padding-2xl);
+  background-color: #2b2b2b;
+  align-self: stretch;
+  box-shadow: 0 4px 26px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-13xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangleParent:hover {
+  background-color: green;
+}
+.orContinueWith {
+  position: relative;
+  font-weight: 500;
+}
+.socialLoginTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 17px 0 18px;
+}
+.facebookIcon {
+  width: 41.5px;
+  height: 41.5px;
+  position: relative;
+}
+.facebookLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.7px 0 0;
+}
+.appleIcon,
+.googleIcon {
+  height: 41.5px;
+  width: 41.5px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialLoginButtons {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  cursor: pointer;
+}
+.socialLogin,
+.socialLoginButtons,
+.socialLoginOptions {
+  display: flex;
+  align-items: flex-start;
+}
+.socialLoginOptions {
+  width: 165px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 31px;
+}
+.socialLogin {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.frameParent,
+.signInTitleContainerParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 39px;
+  font-size: var(--font-size-base);
+  color: #b5b5b5;
+}
+.signInTitleContainerParent {
+  width: 431px;
+  align-items: flex-end;
+  gap: 49px;
+}
+.loginFormContainer,
+.main,
+.yourLogoParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  
+}
+.loginFormContainer {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 30px;
+  
+  border-radius: 10px;
+}
+.main,
+.yourLogoParent {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.yourLogoParent {
+  align-self: stretch;
+  gap: 89px;
+}
+.main {
+  width: 511px;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+  min-width: 511px;
+}
+.frameItem {
+  width: 735px;
+  height: 859px;
+  position: relative;
+  border-radius: var(--br-mini);
+  background-color: var(--color-midnightblue);
+  display: none;
+  max-width: 100%;
+}
+.phoneCall1Icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.phoneIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px 0 0;
+}
+.div {
+  position: relative;
+  display: inline-block;
+  min-width: 124px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.companyName,
+.phoneNumber {
+  flex-direction: row;
+  align-items: flex-start;
+}
+.phoneNumber {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.companyName {
+  align-self: stretch;
+}
+.companyName,
+.contactInfo,
+.contactInfo1 {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.contactInfo1 {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 17px;
+}
+.contactInfo {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 0 25px;
+  box-sizing: border-box;
+}
+.loremIpsumIs,
+.signInTo {
+  position: relative;
+  z-index: 1;
+  
+}
+.signInTo {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.loremIpsumIs {
+  align-self: stretch;
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+}
+.copyright,
+.login3,
+.rectangleGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+}
+.copyright {
+  width: 396px;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 100%;
+  font-size: 40px;
+}
+.login3,
+.rectangleGroup {
+  box-sizing: border-box;
+}
+.rectangleGroup {
+  flex: 1;
+  border-radius: var(--br-mini);
+  background-color: #2b2b2b;
+  flex-direction: column;
+  padding: 24px 26px 96px 98px;
+  gap: 84px;
+  min-width: 478px;
+  max-width: 100%;
+  font-size: 15px;
+  color: var(--color-white);
+}
+.login3 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-2xl) 22px var(--padding-xl) 42px;
+  gap: 130px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1125px) {
+  .contactInfo1,
+  .main {
+    flex: 1;
+  }
+  .login3 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .signIn {
+    font-size: var(--font-size-5xl);
+  }
+  .signInTo {
+    font-size: 32px;
+  }
+  .rectangleGroup {
+    padding-top: var(--padding-xl);
+    padding-bottom: 62px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .yourLogoParent {
+    gap: 44px;
+  }
+  .main {
+    min-width: 100%;
+  }
+  .rectangleGroup {
+    gap: 42px;
+    padding-left: 49px;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .login3 {
+    gap: 65px;
+    padding-left: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .yourLogo {
+    font-size: var(--font-size-base);
+  }
+  .signIn {
+    font-size: 18px;
+  }
+  .rememberForgotContainer {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    gap: 19px;
+  }
+  .signInTitleContainerParent {
+    gap: 24px;
+  }
+  .yourLogoParent {
+    gap: var(--gap-3xl);
+  }
+  .signInTo {
+    font-size: var(--font-size-5xl);
+  }
+  .loremIpsumIs {
+    font-size: var(--font-size-base);
+  }
+  .rectangleGroup {
+    gap: 21px;
+    padding-left: var(--padding-xl);
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+  .login3 {
+    gap: 32px;
+  }
+}
+
+.rememberMeCheckbox:checked{
+  accent-color: green;
+}

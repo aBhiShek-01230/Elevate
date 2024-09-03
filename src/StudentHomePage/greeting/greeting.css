@@ -1,0 +1,15 @@
+.greets{
+  background-color: #2b2b2b;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-top: 50px;
+  p{
+    color: white;
+  }
+}
+
+.grretBox{
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

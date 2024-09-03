@@ -1,0 +1,54 @@
+.doubt-input {
+  display: flex;
+  align-items: center;
+  background-color: #272525;
+  border-radius: 25px;
+  /* gap: 10px; */
+  padding: 15px;
+  padding-left: 10px;
+  color: #fff;
+  /* position: relative; */
+  margin-top: 20px;
+  height: 50px;
+}
+
+.together{
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  img{
+    width: 70px;
+  }
+}
+ .chat-icon {
+  margin: 0 10px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+}
+input::placeholder {
+  font-size: 15px; 
+}
+
+.doubt-input.focused .icons {
+  display: none;
+}
+
+.doubt-input.focused input {
+  width: 100%;
+}
+
+.send{
+ margin-left: 250px;
+  position: fixed;
+}

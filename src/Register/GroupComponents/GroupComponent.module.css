@@ -1,0 +1,63 @@
+.email {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 36px;
+}
+.message1Icon {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.emailMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.enterYourEmail {
+  width: calc(100% - 17px);
+  border: 0;
+  outline: 0;
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 24px;
+  flex: 1;
+  position: relative;
+  color: var(--color-midnightblue);
+  text-align: left;
+  display: inline-block;
+  min-width: 119px;
+  padding: 0;
+}
+.emailField {
+  width: 226px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.componentChild {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  background-color: var(--color-midnightblue);
+}
+.emailParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-darkgray);
+  font-family: var(--font-poppins);
+}

@@ -1,0 +1,8 @@
+.saly10Icon {
+  width: 521px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 1;
+}

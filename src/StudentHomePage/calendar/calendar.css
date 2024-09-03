@@ -1,0 +1,11 @@
+.cal{
+  margin-top: 50px;
+  border: 2px solid #dfebff;
+  margin-right: 10px;
+  /* padding: 40px; */
+}
+
+.cal {
+  border-radius: 20px; /* adjust the border radius value as needed */
+  overflow: hidden; /* add this to ensure the border radius is applied */
+}
